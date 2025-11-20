@@ -6,7 +6,7 @@ import com.example.Proyecto_Optativa.Persistence.Model.Proyecto;
 public interface ProyectoRepository {
     List<Proyecto> findAll();
 
-    Proyecto findById(int id);
+    Proyecto findById(Integer id);
 
     List<Proyecto> findByNombreContains(String palabra);
 
@@ -14,5 +14,5 @@ public interface ProyectoRepository {
 
     void update(Proyecto proyecto);
 
-    void delete(int id);
+    void delete(Integer id);
 }
