@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: Proyecto_Optativa
+  datasource:
+    url: jdbc:mysql://localhost:3306/Proyectosdb?useSSL=false&serverTimezone=UTC
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: none

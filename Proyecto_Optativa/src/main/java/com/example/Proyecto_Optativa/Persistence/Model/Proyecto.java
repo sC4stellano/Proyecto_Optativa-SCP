@@ -22,4 +22,5 @@ public class Proyecto {
     private Status status;
     private List<Developer> desarrolladores;
     private List<Technology> tecnologias;
+
 }

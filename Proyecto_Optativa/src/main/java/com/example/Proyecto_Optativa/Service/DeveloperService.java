@@ -10,11 +10,12 @@ public class DeveloperService {
         this.developerRepository = developerRepository;
     }
 
-    public void addDeveloper(Developer developer) {
+    public boolean addDeveloper(Developer developer) {
         developerRepository.save(developer);
+        return true;
     }
 
-    public void deleteDeveloper(int id) {
-        developerRepository.delete(id);
+    public boolean deleteDeveloper(Integer id) {
+        return developerRepository.delete(id);
     }
 }

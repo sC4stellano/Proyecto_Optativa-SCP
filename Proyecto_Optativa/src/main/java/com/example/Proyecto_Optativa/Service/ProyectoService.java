@@ -15,7 +15,7 @@ public class ProyectoService {
         return proyectoRepository.findAll();
     }
 
-    public Proyecto getProyectoById(int id) {
+    public Proyecto getProyectoById(Integer id) {
         return proyectoRepository.findById(id);
     }
 
@@ -27,12 +27,12 @@ public class ProyectoService {
         proyectoRepository.save(proyecto);
     }
 
-    public void updateProyecto(Proyecto proyecto) {
-        proyectoRepository.update(proyecto);
+    public boolean updateProyecto(Proyecto proyecto) {
+        return proyectoRepository.update(proyecto);
     }
 
-    public void deleteProyecto(int id) {
-        proyectoRepository.delete(id);
+    public boolean deleteProyecto(Integer id) {
+        return proyectoRepository.delete(id);
     }
 
 }

@@ -9,8 +9,8 @@ public class ProyectoRepositoryImpl implements ProyectoRepository {
 
     @Override
     public List<Proyecto> findAll() {
-        return new ArrayList<>(listaProyectos); // Devuelve una copia para evitar modificar la lista original desde
-                                                // fuera
+        return new ArrayList<>(listaProyectos);
+        // Devuelve una copia para evitar modificar la lista original desde fuera
     }
 
     @Override

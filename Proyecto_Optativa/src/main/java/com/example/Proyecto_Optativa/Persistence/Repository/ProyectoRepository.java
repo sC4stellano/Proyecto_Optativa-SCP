@@ -12,7 +12,7 @@ public interface ProyectoRepository {
 
     void save(Proyecto proyecto);
 
-    void update(Proyecto proyecto);
+    boolean update(Proyecto proyecto);
 
-    void delete(Integer id);
+    boolean delete(Integer id);
 }

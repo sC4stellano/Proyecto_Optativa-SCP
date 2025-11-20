@@ -11,12 +11,13 @@ public class TechnologyService {
         this.technologyRepository = technologyRepository;
     }
 
-    public void addTechnology(Technology technology) {
+    public boolean addTechnology(Technology technology) {
         technologyRepository.save(technology);
+        return true;
     }
 
-    public void deleteTechnology(int id) {
-        technologyRepository.delete(id);
+    public boolean deleteTechnology(Integer id) {
+        return technologyRepository.delete(id);
     }
 
 }

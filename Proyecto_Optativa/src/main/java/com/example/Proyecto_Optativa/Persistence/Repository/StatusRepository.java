@@ -10,8 +10,8 @@ public interface StatusRepository {
 
     void save(Status status);
 
-    void update(Status status);
+    boolean update(Status status);
 
-    void delete(Integer id);
+    boolean delete(Integer id);
 
 }
